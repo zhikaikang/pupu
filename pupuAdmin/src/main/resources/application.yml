@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pupuAdmin
+
+#????
+server:
+  port: 9991
+  tomcat:
+    uri-encoding: UTF-8
+
+# ??????
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9990/eureka/   #??????
+  instance:
+    prefer-ip-address: true
+
