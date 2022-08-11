@@ -12,9 +12,20 @@ server:
   tomcat:
     uri-encoding: UTF-8
 
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.pupu.bean
+redis:
+  # develop
+  host:
+  # preview
+  #    host:
+  port: 6379
+  timeout: 5000
+  jedis:
+    pool:
+      max-idle: 25
+      min-idle: 10
+      max-active: 50
+      max-wait: -1
+
 
 eureka:
   client:
